@@ -5,7 +5,8 @@
 
 
 
- .popup-container {
+ /* Popup container */
+        .popup-container {
             position: fixed;
             top: 0;
             left: 0;
@@ -23,8 +24,8 @@
         /* Popup content */
         .popup-content {
             position: relative;
-            width: 80%;
-            max-width: 800px;
+            width: 1080px;
+            height: 1080px;
             background: white;
             border-radius: 10px;
             overflow: hidden;
@@ -37,7 +38,7 @@
             position: absolute;
             top: 10px;
             right: 15px;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
             cursor: pointer;
             color: #333;
@@ -54,6 +55,15 @@
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
+
+        /* Responsive fix: Smaller screens */
+        @media (max-width: 1080px) {
+            .popup-content {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
 /* --------------- Menu --------------- */
 .navbar {
   position: absolute;
