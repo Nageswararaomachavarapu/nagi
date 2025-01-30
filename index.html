@@ -1549,6 +1549,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
 
+
+     <script>
+        // Function to show the popup on page load
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById("popup").classList.add("show");
+            }, 1000); // Delay the popup by 1 second for better UX
+        };
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup").classList.remove("show");
+        }
+    </script>
+
 </body>
 
 </html>
